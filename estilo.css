@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive, Arial, Helvetica, sans-serif;
+  
+}
+
+body {       
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(https://news.harvard.edu/wp-content/uploads/2018/04/healthy-habits-1200x800.jpg);
+  background-size: cover;
+
+  /* background: linear-gradient(239deg, #eeaeca, #94bbe9); */
+  /* background-size: 400% 400%; */
+  /* animation: colors 10s ease infinite; */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+}
+
+input {
+  margin-top: 10pt;
+  padding: 6pt;
+  border-radius: 15px;
+  outline: none;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 5pt;
+  color: #212121;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px) saturate(120%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  /* background-color: #efefef; */
+  /* border: 1px solid #ccc; */
+  /* box-shadow: 0px 10pt 10pt rgba(0, 0, 0, 0.15); */
+  padding: 15pt;
+  border-radius: 5pt;
+}
+
+button {
+  margin-top: 20pt;
+  min-width: 100pt;
+  padding: 6px;
+  width: 14%;
+  border-radius: 5pt;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  /* background-color: #212121; */
+  /* color: #efefef; */
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: silver;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 92%;
+  }
+  
+  50% {
+    background-position: 100% 9%;
+  }
+
+  100% {
+    background-position: 0% 92%
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(0.50);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#mensagem {
+  margin-top: 20pt;
+}
+
+.escondido {
+  display: none;
+}
+
+.paraAnimacao{
+
+  animation: textAnimation 1s ease-in-out;
+}
+@keyframes textAnimation {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
