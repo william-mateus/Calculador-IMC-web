@@ -7,7 +7,7 @@ function mostrarMensagem(mensagem) {
 elementoMensagem.innerText = mensagem;// InnerText -> Define o texto dentro de um elemento
     elementoMensagem.classList.remove("escondido");// ClassList -> Possui todas as classes de um elemento. .remove -> Remove a classe de um elemento
     
-    // Adiciona a class 'vagabundo' no elemento mensage, isso inicia a animção
+    // Adiciona a class 'paraAnimacao' no elemento mensage, isso inicia a animção
     elementoMensagem.classList.add("paraAnimacao");
     // Espera 1 segundo e remove a classe, parando a animação. Esperamos 1 segundo porquê é o tempo de duração da animação, se a animação durar 2 segundos, mudamos para esperar 2 segundos
     // O setTimeout recebe em milisegundos, então pegue o tempo da animação e multiplique por 1000!
